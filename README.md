@@ -27,6 +27,18 @@ Grbl includes full acceleration management with look ahead. That means the contr
 
 ***
 
+## Update for DIY drawing machine
+
+_@htutman_
+
+This is a forked version of the great [grbl](https://github.com/gnea/grbl/), changed for a DIY CoreXY drawing machine where the spindle commands are controlling the pen (micro servo).
+
+To move the pen's servo to the home position (pen up) use `M5`. `M3 S<angle>` (or `M4 S<angle>`) rotates the pen's servo shaft for _`<angle>`_ degrees (between 0 and 90). Basically, `M5` is the same as `M3 S0` (or `M4 S0`).
+
+You can check a demo at [YouTube](https://youtu.be/VnnoOOyr0eI).
+
+***
+
 ## Update Summary for v1.1
 - **IMPORTANT:** Your EEPROM will be wiped and restored with new settings. This is due to the addition of two new spindle speed '$' settings.
 
